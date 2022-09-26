@@ -1,0 +1,19 @@
+<html>
+    <body style="text-align:center ;">
+          
+        <h1>Admin View</h1><br><br>
+        <h2>Delete Operation</h2><br><br>
+        <h2>Hello User</h2>
+        <form action="/KeywordioLib/loginsignup/Admin/delete" method="post">
+            {% csrf_token %}
+            
+            <label for="BookId">Book ID:</label>
+            <input type="text" id="BookId" name="BookId" value=""><br><br>
+            <label for="BookName">Book Name:</label>
+            <input type="text" id="BookName" name="BookName" value=""><br><br>
+            
+            <input type="submit" value="delete">
+        </form> 
+
+    </body>  
+</html>

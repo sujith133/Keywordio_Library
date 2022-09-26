@@ -1,0 +1,25 @@
+<html>
+    <body style="text-align: center;">
+        
+   
+        <h1>Admin View</h1><br><br>
+        <h2>Read Operation</h2>
+
+        <table style="text-align: center;">
+            
+            <tr>
+                <th>Book Id</th><th>Book Name</th><th>Book Status</th>
+
+            </tr>
+            {% for sos in list %}
+            <tr>
+                <td>{{sos.BookId}}</td>
+                <td>{{sos.BookName}}</td>
+                <td>{{sos.BookStatus}}</td>
+            </tr>
+            {%endfor%}
+        </table>
+
+ 
+    </body>
+</html>

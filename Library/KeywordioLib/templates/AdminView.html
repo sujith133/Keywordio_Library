@@ -1,0 +1,16 @@
+<html>
+    <h1>Admin View</h1><br><br>
+    <h2>Hello User</h2>
+    <h5>PLease Select the Operation which you wanna perform...</h5>
+    
+    <form action="/KeywordioLib/loginsignup/Admin" method="post">
+        {% csrf_token %}        
+        <input type="submit" name="create" value="create">
+        <input type="submit" name="read" value="read">
+        <input type="submit" name="update" value="update">
+        <input type="submit" name="delete" value="delete">
+
+    </form>
+
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body style="text-align: center;">
+    <br><br><br><br>
+    <form action="/KeywordioLib/loginsignup/" method="post">
+        {% csrf_token %}
+        
+
+        <input type="submit" name="StudentView" value="StudentView">
+    </form> 
+    
+<h1>KEYWORDIO LIBRARY</h1>
+<br><br><br><br>
+<h3>LogIn</h3>
+<br><br><br><br>
+<form action="/KeywordioLib/loginsignup/" method="post">
+    {% csrf_token %}
+    {{loginform}}
+    <label for="useremail">User Email:</label>
+    <input type="text" id="useremail" name="useremail" value=""><br><br>
+    <label for="password">User Password:</label>
+    <input type="text" id="password" name="password" value=""><br><br>
+    <input type="submit" name="login" value="login">
+</form> 
+<br><br>
+<hr>
+<br><br>
+<h3>SignUp</h3>
+<br><br>
+<form action="/KeywordioLib/signup/" method="post">
+    {% csrf_token %}
+    
+    <label for="username">User Name:</label>
+    <input type="text" id="username" name="username" value=""><br><br>
+    <label for="useremail">User Email:</label>
+    <input type="text" id="useremail" name="useremail" value=""><br><br>
+    <label for="password">User password:</label>
+    <input type="text" id="password" name="password" value=""><br><br>
+    <input type="submit" value="signup">
+</form> 
+</body>
+</html>
+
